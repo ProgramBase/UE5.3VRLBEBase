@@ -1,0 +1,146 @@
+﻿using Script.CoreUObject;
+using Script.Library;
+
+namespace Script.Engine
+{
+	[PathName("/Script/Engine.ScalarParameterValue")]
+	public partial class FScalarParameterValue : IStaticStruct, IGarbageCollectionHandle
+	{
+		public static UScriptStruct StaticStruct()
+		{
+			return StaticStructSingleton ??= UStructImplementation.UStruct_StaticStructImplementation("/Script/Engine.ScalarParameterValue");
+		}
+
+		private static UScriptStruct StaticStructSingleton { get; set; }
+
+		public FScalarParameterValue() => UStructImplementation.UStruct_RegisterImplementation(this, Utils.GetPathName(GetType()));
+
+		~FScalarParameterValue() => UStructImplementation.UStruct_UnRegisterImplementation(GarbageCollectionHandle);
+
+		public static bool operator ==(FScalarParameterValue A, FScalarParameterValue B) => Utils.EqualsTo(A, B, UStructImplementation.UStruct_IdenticalImplementation);
+
+		public static bool operator !=(FScalarParameterValue A, FScalarParameterValue B) => !(A == B);
+
+		public override bool Equals(object Other) => this == Other as FScalarParameterValue;
+
+		public override int GetHashCode() => (int)GarbageCollectionHandle;
+
+		public FScalarParameterAtlasInstanceData AtlasData
+		{
+			get
+			{
+				unsafe
+				{
+					var __ReturnBuffer = stackalloc byte[8];
+
+					FPropertyImplementation.FProperty_GetStructPropertyImplementation(GarbageCollectionHandle, __AtlasData, __ReturnBuffer);
+
+					return *(FScalarParameterAtlasInstanceData*)__ReturnBuffer;
+				}
+			}
+
+			set
+			{
+				unsafe
+				{
+					var __InBuffer = stackalloc byte[8];
+
+					*(nint*)__InBuffer = value?.GarbageCollectionHandle ?? nint.Zero;
+
+					FPropertyImplementation.FProperty_SetStructPropertyImplementation(GarbageCollectionHandle, __AtlasData, __InBuffer);
+				}
+			}
+		}
+
+		public FMaterialParameterInfo ParameterInfo
+		{
+			get
+			{
+				unsafe
+				{
+					var __ReturnBuffer = stackalloc byte[8];
+
+					FPropertyImplementation.FProperty_GetStructPropertyImplementation(GarbageCollectionHandle, __ParameterInfo, __ReturnBuffer);
+
+					return *(FMaterialParameterInfo*)__ReturnBuffer;
+				}
+			}
+
+			set
+			{
+				unsafe
+				{
+					var __InBuffer = stackalloc byte[8];
+
+					*(nint*)__InBuffer = value?.GarbageCollectionHandle ?? nint.Zero;
+
+					FPropertyImplementation.FProperty_SetStructPropertyImplementation(GarbageCollectionHandle, __ParameterInfo, __InBuffer);
+				}
+			}
+		}
+
+		public float ParameterValue
+		{
+			get
+			{
+				unsafe
+				{
+					var __ReturnBuffer = stackalloc byte[4];
+
+					FPropertyImplementation.FProperty_GetStructPropertyImplementation(GarbageCollectionHandle, __ParameterValue, __ReturnBuffer);
+
+					return *(float*)__ReturnBuffer;
+				}
+			}
+
+			set
+			{
+				unsafe
+				{
+					var __InBuffer = stackalloc byte[4];
+
+					*(float*)__InBuffer = value;
+
+					FPropertyImplementation.FProperty_SetStructPropertyImplementation(GarbageCollectionHandle, __ParameterValue, __InBuffer);
+				}
+			}
+		}
+
+		public FGuid ExpressionGUID
+		{
+			get
+			{
+				unsafe
+				{
+					var __ReturnBuffer = stackalloc byte[8];
+
+					FPropertyImplementation.FProperty_GetStructPropertyImplementation(GarbageCollectionHandle, __ExpressionGUID, __ReturnBuffer);
+
+					return *(FGuid*)__ReturnBuffer;
+				}
+			}
+
+			set
+			{
+				unsafe
+				{
+					var __InBuffer = stackalloc byte[8];
+
+					*(nint*)__InBuffer = value?.GarbageCollectionHandle ?? nint.Zero;
+
+					FPropertyImplementation.FProperty_SetStructPropertyImplementation(GarbageCollectionHandle, __ExpressionGUID, __InBuffer);
+				}
+			}
+		}
+
+		private static uint __AtlasData = 0;
+
+		private static uint __ParameterInfo = 0;
+
+		private static uint __ParameterValue = 0;
+
+		private static uint __ExpressionGUID = 0;
+
+		public nint GarbageCollectionHandle { get; set; }
+	}
+}

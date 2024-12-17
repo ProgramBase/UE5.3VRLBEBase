@@ -1,0 +1,29 @@
+﻿using Script.CoreUObject;
+using Script.Library;
+
+namespace Script.RigVM
+{
+	[PathName("/Script/RigVM.RigVMFunction_StringBase")]
+	public partial class FRigVMFunction_StringBase : FRigVMStruct, IStaticStruct, IGarbageCollectionHandle
+	{
+		public new static UScriptStruct StaticStruct()
+		{
+			return StaticStructSingleton ??= UStructImplementation.UStruct_StaticStructImplementation("/Script/RigVM.RigVMFunction_StringBase");
+		}
+
+		private static UScriptStruct StaticStructSingleton { get; set; }
+
+		public FRigVMFunction_StringBase()
+		{
+		}
+
+		public static bool operator ==(FRigVMFunction_StringBase A, FRigVMFunction_StringBase B) => Utils.EqualsTo(A, B, UStructImplementation.UStruct_IdenticalImplementation);
+
+		public static bool operator !=(FRigVMFunction_StringBase A, FRigVMFunction_StringBase B) => !(A == B);
+
+		public override bool Equals(object Other) => this == Other as FRigVMFunction_StringBase;
+
+		public override int GetHashCode() => (int)GarbageCollectionHandle;
+
+	}
+}

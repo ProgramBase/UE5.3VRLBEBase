@@ -1,0 +1,116 @@
+﻿using Script.Library;
+
+namespace Script.CoreUObject
+{
+	[PathName("/Script/CoreUObject.Vector3f")]
+	public partial class FVector3f : IStaticStruct, IGarbageCollectionHandle
+	{
+		public static UScriptStruct StaticStruct()
+		{
+			return StaticStructSingleton ??= UStructImplementation.UStruct_StaticStructImplementation("/Script/CoreUObject.Vector3f");
+		}
+
+		private static UScriptStruct StaticStructSingleton { get; set; }
+
+		public FVector3f() => UStructImplementation.UStruct_RegisterImplementation(this, Utils.GetPathName(GetType()));
+
+		~FVector3f() => UStructImplementation.UStruct_UnRegisterImplementation(GarbageCollectionHandle);
+
+		public static bool operator ==(FVector3f A, FVector3f B) => Utils.EqualsTo(A, B, UStructImplementation.UStruct_IdenticalImplementation);
+
+		public static bool operator !=(FVector3f A, FVector3f B) => !(A == B);
+
+		public override bool Equals(object Other) => this == Other as FVector3f;
+
+		public override int GetHashCode() => (int)GarbageCollectionHandle;
+
+		public float X
+		{
+			get
+			{
+				unsafe
+				{
+					var __ReturnBuffer = stackalloc byte[4];
+
+					FPropertyImplementation.FProperty_GetStructPropertyImplementation(GarbageCollectionHandle, __X, __ReturnBuffer);
+
+					return *(float*)__ReturnBuffer;
+				}
+			}
+
+			set
+			{
+				unsafe
+				{
+					var __InBuffer = stackalloc byte[4];
+
+					*(float*)__InBuffer = value;
+
+					FPropertyImplementation.FProperty_SetStructPropertyImplementation(GarbageCollectionHandle, __X, __InBuffer);
+				}
+			}
+		}
+
+		public float Y
+		{
+			get
+			{
+				unsafe
+				{
+					var __ReturnBuffer = stackalloc byte[4];
+
+					FPropertyImplementation.FProperty_GetStructPropertyImplementation(GarbageCollectionHandle, __Y, __ReturnBuffer);
+
+					return *(float*)__ReturnBuffer;
+				}
+			}
+
+			set
+			{
+				unsafe
+				{
+					var __InBuffer = stackalloc byte[4];
+
+					*(float*)__InBuffer = value;
+
+					FPropertyImplementation.FProperty_SetStructPropertyImplementation(GarbageCollectionHandle, __Y, __InBuffer);
+				}
+			}
+		}
+
+		public float Z
+		{
+			get
+			{
+				unsafe
+				{
+					var __ReturnBuffer = stackalloc byte[4];
+
+					FPropertyImplementation.FProperty_GetStructPropertyImplementation(GarbageCollectionHandle, __Z, __ReturnBuffer);
+
+					return *(float*)__ReturnBuffer;
+				}
+			}
+
+			set
+			{
+				unsafe
+				{
+					var __InBuffer = stackalloc byte[4];
+
+					*(float*)__InBuffer = value;
+
+					FPropertyImplementation.FProperty_SetStructPropertyImplementation(GarbageCollectionHandle, __Z, __InBuffer);
+				}
+			}
+		}
+
+		private static uint __X = 0;
+
+		private static uint __Y = 0;
+
+		private static uint __Z = 0;
+
+		public nint GarbageCollectionHandle { get; set; }
+	}
+}

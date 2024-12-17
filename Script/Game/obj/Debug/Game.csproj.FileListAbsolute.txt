@@ -1,0 +1,11 @@
+D:\UE\VRLBE\Content\Script\Game.deps.json
+D:\UE\VRLBE\Content\Script\Game.dll
+D:\UE\VRLBE\Script\Game\obj\Debug\Game.csproj.AssemblyReference.cache
+D:\UE\VRLBE\Script\Game\obj\Debug\Game.GeneratedMSBuildEditorConfig.editorconfig
+D:\UE\VRLBE\Script\Game\obj\Debug\Game.AssemblyInfoInputs.cache
+D:\UE\VRLBE\Script\Game\obj\Debug\Game.AssemblyInfo.cs
+D:\UE\VRLBE\Script\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+D:\UE\VRLBE\Script\Game\obj\Debug\Game.csproj.Up2Date
+D:\UE\VRLBE\Script\Game\obj\Debug\Game.dll
+D:\UE\VRLBE\Script\Game\obj\Debug\refint\Game.dll
+D:\UE\VRLBE\Script\Game\obj\Debug\ref\Game.dll

@@ -1,0 +1,8 @@
+D:\UE\VRLBE\Script\Weavers\bin\Debug\netstandard2.0\Weavers.deps.json
+D:\UE\VRLBE\Script\Weavers\bin\Debug\netstandard2.0\Weavers.dll
+D:\UE\VRLBE\Script\Weavers\obj\Debug\netstandard2.0\Weavers.csproj.AssemblyReference.cache
+D:\UE\VRLBE\Script\Weavers\obj\Debug\netstandard2.0\Weavers.GeneratedMSBuildEditorConfig.editorconfig
+D:\UE\VRLBE\Script\Weavers\obj\Debug\netstandard2.0\Weavers.AssemblyInfoInputs.cache
+D:\UE\VRLBE\Script\Weavers\obj\Debug\netstandard2.0\Weavers.AssemblyInfo.cs
+D:\UE\VRLBE\Script\Weavers\obj\Debug\netstandard2.0\Weavers.csproj.CoreCompileInputs.cache
+D:\UE\VRLBE\Script\Weavers\obj\Debug\netstandard2.0\Weavers.dll

@@ -1,0 +1,9 @@
+D:\UE\VRLBE\Content\Script\UE.deps.json
+D:\UE\VRLBE\Content\Script\UE.dll
+D:\UE\VRLBE\Script\UE\obj\Debug\UE.GeneratedMSBuildEditorConfig.editorconfig
+D:\UE\VRLBE\Script\UE\obj\Debug\UE.AssemblyInfoInputs.cache
+D:\UE\VRLBE\Script\UE\obj\Debug\UE.AssemblyInfo.cs
+D:\UE\VRLBE\Script\UE\obj\Debug\UE.csproj.CoreCompileInputs.cache
+D:\UE\VRLBE\Script\UE\obj\Debug\UE.dll
+D:\UE\VRLBE\Script\UE\obj\Debug\refint\UE.dll
+D:\UE\VRLBE\Script\UE\obj\Debug\ref\UE.dll

@@ -1,0 +1,10 @@
+D:\UE\VRLBE\Script\SourceGenerator\bin\Debug\netstandard2.0\SourceGenerator.deps.json
+D:\UE\VRLBE\Script\SourceGenerator\bin\Debug\netstandard2.0\SourceGenerator.dll
+D:\UE\VRLBE\Script\SourceGenerator\bin\Debug\netstandard2.0\SourceGenerator.pdb
+D:\UE\VRLBE\Script\SourceGenerator\obj\Debug\netstandard2.0\SourceGenerator.csproj.AssemblyReference.cache
+D:\UE\VRLBE\Script\SourceGenerator\obj\Debug\netstandard2.0\SourceGenerator.GeneratedMSBuildEditorConfig.editorconfig
+D:\UE\VRLBE\Script\SourceGenerator\obj\Debug\netstandard2.0\SourceGenerator.AssemblyInfoInputs.cache
+D:\UE\VRLBE\Script\SourceGenerator\obj\Debug\netstandard2.0\SourceGenerator.AssemblyInfo.cs
+D:\UE\VRLBE\Script\SourceGenerator\obj\Debug\netstandard2.0\SourceGenerator.csproj.CoreCompileInputs.cache
+D:\UE\VRLBE\Script\SourceGenerator\obj\Debug\netstandard2.0\SourceGenerator.dll
+D:\UE\VRLBE\Script\SourceGenerator\obj\Debug\netstandard2.0\SourceGenerator.pdb
